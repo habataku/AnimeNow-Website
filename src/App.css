@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    font-size: 2.25rem;
+    padding: 2em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero-container > h1 {
+    margin-block: 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.toolbar-container {
+    display: flex;
+    flex-direction: row;
+    padding: 1.75em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.logo-container > div > img {
+    width: 58px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo-container > div > p {
+    margin-block: 0em;
+}
+
+.toolbar-items-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.toolbar-item {
+    padding-inline: 1em;
+    margin-inline: 0.5em;
+    padding-block: 1em;
+    background-color: #F2F2F2;
+    border-radius: 1em;
+}
+
+.toolbar-item > p {
+    margin-block: 0px;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+/* Download Button */
+.download-button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.2rem;
+    gap: 1em;
+    background-color: black;
+    color: white;
+    width: fit-content;
+    align-self: center;
+    padding-inline: 1.5em;
+    border-radius: 1em;
+    margin-top: 2em;
+    box-shadow: 0.5em 0.75em 1em rgba(128, 128, 128, 0.5);
+}
+
+.download-button-container > div > img {
+    filter: invert(100%);
+    width: 24px;
 }
